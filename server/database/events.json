@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "seedId": "1",
+    "type": "email",
+    "description": "Email event on seed 1",
+    "threatLevelCode": "1",
+    "createdDateTime": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "seedId": "1",
+    "type": "email",
+    "description": "Email event on seed 1",
+    "threatLevelCode": "2",
+    "createdDateTime": "2022-04-01T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "seedId": "1",
+    "type": "email",
+    "description": "Email event on seed 1",
+    "threatLevelCode": "3",
+    "createdDateTime": "2021-06-12T00:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "seedId": "2",
+    "type": "http",
+    "description": "Http event on seed 2",
+    "threatLevelCode": "2",
+    "createdDateTime": "2022-04-11T00:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "seedId": "2",
+    "type": "webscrape",
+    "description": "Webscrape event on seed 2",
+    "threatLevelCode": "3",
+    "createdDateTime": "2022-02-01T00:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "seedId": "3",
+    "type": "email",
+    "description": "Email event on seed 3",
+    "threatLevelCode": "3",
+    "createdDateTime": "2022-03-21T00:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "seedId": "4",
+    "type": "email",
+    "description": "Email event on seed 4",
+    "threatLevelCode": "2",
+    "createdDateTime": "2022-04-18T00:00:00.000Z"
+  },
+  {
+    "id": "8",
+    "seedId": "4",
+    "type": "domain",
+    "description": "Domain event on seed 4",
+    "threatLevelCode": "1",
+    "createdDateTime": "2022-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "9",
+    "seedId": "4",
+    "type": "email",
+    "description": "Email event on seed 4",
+    "threatLevelCode": "2",
+    "createdDateTime": "2022-04-20T00:00:00.000Z"
+  },
+  {
+    "id": "10",
+    "seedId": "1",
+    "type": "domain",
+    "description": "Domain event on seed 1",
+    "threatLevelCode": "1",
+    "createdDateTime": "2022-01-01T00:00:00.000Z"
+  }
+]
