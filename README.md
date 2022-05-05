@@ -61,12 +61,13 @@ The back end consists of an express api, each route communicates with a service,
 ## Additional Info
 * You can use any additional packages you see fit to enhance the output or make the tasks easier, just be ready to explain your choices behind your selections!
 * This is a real world task, if you need to google then google - we all do it!!
+
 ## Scripts
 The following scripts are available to you:
-|---|----|
+
 |script|description|
 |------|-----------|
-|```start```| Starts both front and back end concurrently |
+|```start```| Starts both front and back end concurrently - FE runs on ```http://localhost:3000```, BE runs on ```http://localhost:3001```|
 |```start:client```| Starts the front end only |
 |```start:server```| Starts both back end only |
 |```test```| Runs all tests for front end and then all tests for back end |
