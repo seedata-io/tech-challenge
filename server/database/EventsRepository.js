@@ -1,12 +1,9 @@
 const eventData = require('./events.json');
 
 const EventsRepository = () => ({
-  async getAll() {
+  async getAll(sortField) {
     return new Promise((resolve) => resolve(eventData));
   },
-  async getById(id) {
-    return new Promise((resolve) => resolve(eventData[0]));
-  }
 });
 
 module.exports = EventsRepository();

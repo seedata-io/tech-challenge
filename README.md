@@ -13,8 +13,9 @@ We are not looking for polished results but we would like you to be able to talk
 We'd also love to hear how you think any of the code could be improved or the additional steps you might have taken given extra time.
 ### **Challenge options/effort**
 There are two options for completing the challenge:
-1. Pair programming (1hr session): You complete the challenge as a pair programming exercise and we discuss your choices, code as you complete the tasks
-2. Offine (1.5hr): You complete the challenge on your own for the first hour of the interview and we then reconvene for the final 30 minutes to discuss your solution 
+1. During the interview - Pair programming (1hr session): You complete the challenge as a pair programming exercise and we discuss your choices and code as you complete the tasks
+2. During the interview - Individual programming during interview (1.5hr): We start an interview session togerher, I will then leave you to complete the challenge on your own for the first 45 minutes of the interview and we then reconvene for the final 45 minutes to discuss your solution 
+2. Prior to the interview, followed by an interview (45 minutes): You to complete the challenge in your own time and then we arrange for a 45 minutes interview to discuss your solution 
 
 
 ## The Challenge
@@ -29,12 +30,22 @@ Our application consists of a simple React (create-react-app) front end and an e
 
 The purpose of tis application is to list all the events on the front end app.
 
+
+### Backend Challenge
+The back end consists of an express api, each route communicates with a service, which in turns calls a repository that will return the data required by the service.
+We would like you to:
+* Fix the current failing tests in the following stages:
+  1. An event returned from the repo has a property of threatLevelCode. There is a constant object that holds descriptions for each code in ```~/server/constants/ThreatLevels```, use this file to add an additional property to the event named ```threatLevel``` with the description matching the events threatLevelCode. i.e. event 1 had threatLevelCode 1, the returned event from the EventService should have a property of ```threatLevel``` with a value of 'TPL:Green'
+  1. The EventService needs to return an Event object with a ```seed``` property that contains the seed record related to the event.
+  3. Implement the sortField functionality. A sortField url parameter is passed to the API, implement the code that will use this value to sort the results returned
+
+
 ### Frontend Challenge
 The front end recieves a list of events from the back end via an api call. We would like you to:
 
 #### Basic challenge
 * Display these results in a table
-* Each row shold display:
+* Each row should display:
   * Event type
   * Event description
   * Seed name
@@ -43,15 +54,7 @@ The front end recieves a list of events from the back end via an api call. We wo
   * Make it pretty!
 
 #### Additional tasks (if you want to do more)
-1. Group the events by their seed
-### Backend Challenge
-The back end consists of an express api, each route communicates with a service, which in turns calls a repository that will return the data required by the service. We would like you to:
-* Fix the current failing tests in the following stages:
-  1. An event returned from the repo has a property of threatLevelCode. There is a constant object that holds descriptions for each code in ```~/server/constants/ThreatLevels```, use this file to add an additional property to the event named ```threatLevel``` with the description matching the events threatLevelCode. i.e. event 1 had threatLevelCode 1, the returned event from the EventService should have a property of ```threatLevel``` with a value of 'TPL:Green'
-  1. The EventService needs to return an Event object with a ```seed``` property that contains the seed record related to the event.
-  3. Fix the final test by refactoring the api end point ```/api/events/:id``` to return a status code of 404 and a message in the response body 'No such event: ${include the event id passed in on paramater :id}'
-
-
+* Make Sort By field work correctly and call the back-end passing the value of the sort field selected
 
 
 ## Working on the code

@@ -1,12 +1,10 @@
 const eventsRepo = require('../../database/EventsRepository');
+const seedsRepo = require('../../database/SeedsRepository');
 
 const EventsService = () => ({
-  async getAll() {
-    return eventsRepo.getAll();
+  async getAll(sortField = 'seedId') {
+    return eventsRepo.getAll(sortField);
   },
-  async getById(id) {
-    return eventsRepo.getById(id);
-  }
 });
 
 module.exports = EventsService();
