@@ -1,22 +1,22 @@
 # Seedata.io Tech Challenge
 
 ## Introduction
-We appreciate no-one likes doing technical challenges so we've tried to make this as painless and as brief as possible. There are also different options of how you complete the challenge
+We appreciate no-one likes doing technical challenges so we've tried to make this as simple as possible, we're only expecting you to take an hour out of your time to complete as much as you can, with the mantra quality over quantity in mind!
+
+### **Challenge options/effort**
+You have the following options for completing the challenge:
+1. Pair programming session (1hr 15min session): You complete the challenge as a pair programming exercise and we discuss your choices and code as you complete the tasks
+2. Individual programming session (1hr 45min session): We start an interview session togerher, I will then leave you to complete the challenge on your own for the first hour of the interview and we then reconvene for the final 45 minutes to discuss your solution 
+2. In advance (45 minute session): You to complete the challenge in your own time, submit your work as a pull request and then we arrange for a 45 minutes interview to discuss your solution
 
 ### **Challenge purpose:**
 The challenge is designed to give us an idea of how you approach problems and requirements and the solutions you put in place to fulfil/solve them. IT focusses on the following areas:
 * **React - component composition, state and styling**
 * **Node - bug fixing, javascript coding and testsing**
 
-We are not looking for polished results but we would like you to be able to talk us through your decisions and why you choose the methods you did.
+We are not looking for polished results but we would like you to be able to talk us through your decisions aroudn code, structure and any tools you've used.
 
-We'd also love to hear how you think any of the code could be improved or the additional steps you might have taken given extra time.
-### **Challenge options/effort**
-There are two options for completing the challenge:
-1. During the interview - Pair programming (1hr session): You complete the challenge as a pair programming exercise and we discuss your choices and code as you complete the tasks
-2. During the interview - Individual programming during interview (1.5hr): We start an interview session togerher, I will then leave you to complete the challenge on your own for the first 45 minutes of the interview and we then reconvene for the final 45 minutes to discuss your solution 
-2. Prior to the interview, followed by an interview (45 minutes): You to complete the challenge in your own time and then we arrange for a 45 minutes interview to discuss your solution 
-
+We'd also love to hear how you think any of the code could be improved or the additional steps you might have taken given more time.
 
 ## The Challenge
 
@@ -58,8 +58,12 @@ The front end recieves a list of events from the back end via an api call. We wo
 
 
 ## Working on the code
-1. Clone this repository
-2. Run ```yarn``` to install dependencies
+1. Fork this repository
+1. Clone your repository
+1. Run ```yarn``` to install dependencies
+
+### Working in advance
+If you chose to complete the work in your own time, please submit your work as a pull request on this repository along with any comments you feel are relevant.
 
 ## Additional Info
 * You can use any additional packages you see fit to enhance the output or make the tasks easier, just be ready to explain your choices behind your selections!
