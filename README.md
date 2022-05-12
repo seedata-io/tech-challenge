@@ -1,13 +1,9 @@
 # Seedata.io Tech Challenge
 
 ## Introduction
-We appreciate no-one likes doing technical challenges so we've tried to make this as simple as possible, we're only expecting you to take an hour out of your time to complete as much as you can, with the mantra quality over quantity in mind!
+We appreciate no-one likes doing technical challenges so we've tried to make this as simple as possible, we're only expecting you to take **1 hour** out of your time to complete as much as you can, with the mantra quality over quantity in mind!
 
-### **Challenge options/effort**
-You have the following options for completing the challenge:
-1. Pair programming session (1hr 15min session): You complete the challenge as a pair programming exercise and we discuss your choices and code as you complete the tasks
-2. Individual programming session (1hr 45min session): We start an interview session togerher, I will then leave you to complete the challenge on your own for the first hour of the interview and we then reconvene for the final 45 minutes to discuss your solution 
-2. In advance (45 minute session): You to complete the challenge in your own time, submit your work as a pull request and then we arrange for a 45 minutes interview to discuss your solution
+We'd like you to fork this repository, complete the chalenge in your own time and submit a pull request back to this repository. Once we've reviewed the code we'll set up a follow up interview (1 hour) to talk through the work you've done and a few more technical questions (no more coding though!).
 
 ### **Challenge purpose:**
 The challenge is designed to give us an idea of how you approach problems and requirements and the solutions you put in place to fulfil/solve them. IT focusses on the following areas:
@@ -61,9 +57,8 @@ The front end recieves a list of events from the back end via an api call. We wo
 1. Fork this repository
 1. Clone your repository
 1. Run ```yarn``` to install dependencies
-
-### Working in advance
-If you chose to complete the work in your own time, please submit your work as a pull request on this repository along with any comments you feel are relevant.
+1. Work on the challenges presented
+1. Submit you PR and let us know it's there for review
 
 ## Additional Info
 * You can use any additional packages you see fit to enhance the output or make the tasks easier, just be ready to explain your choices behind your selections!
