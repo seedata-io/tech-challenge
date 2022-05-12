@@ -1,5 +1,4 @@
 const eventsRepo = require('../../database/EventsRepository');
-const seedsRepo = require('../../database/SeedsRepository');
 
 const EventsService = () => ({
   async getAll(sortField = 'seedId') {
