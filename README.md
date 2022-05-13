@@ -14,6 +14,8 @@ We are not looking for polished results but we would like you to be able to talk
 
 We'd also love to hear how you think any of the code could be improved or the additional steps you might have taken given more time.
 
+You can complete the challenges in any order, so if your stronger on front end then please focus on those tasks before moving to the back end and visa versa if you're more back end focussed.
+
 ## The Challenge
 
 The challenge centers around our code base which deals with events. Events are raised and relate back to a seed that we planted. See the ERD below:
