@@ -1,0 +1,31 @@
+.App {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid blue;
+    padding: 5px;
+    color: darkslategray;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.threatWhite:hover {
+    background-color: lightgray;
+}
+.threatGreen:hover {
+    background-color: green;
+    color: lightgray;
+}
+.threatAmber:hover {
+    background-color: darkorange;
+}
+.threatRed:hover {
+    background-color: crimson;
+    color: lightgray;
+}
