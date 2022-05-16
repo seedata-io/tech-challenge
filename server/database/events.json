@@ -5,6 +5,7 @@
     "type": "email",
     "description": "Email event on seed 1",
     "threatLevelCode": "1",
+    "threatLevel": "TPL:Green",
     "createdDateTime": "2022-01-31T00:00:00.000Z"
   },
   {
@@ -13,6 +14,7 @@
     "type": "email",
     "description": "Email event on seed 1",
     "threatLevelCode": "2",
+    "threatLevel": "TPL:Amber",
     "createdDateTime": "2022-04-01T00:00:00.000Z"
   },
   {
@@ -21,6 +23,7 @@
     "type": "email",
     "description": "Email event on seed 1",
     "threatLevelCode": "3",
+    "threatLevel": "TPL:Red",
     "createdDateTime": "2021-06-12T00:00:00.000Z"
   },
   {
@@ -29,6 +32,7 @@
     "type": "http",
     "description": "Http event on seed 2",
     "threatLevelCode": "2",
+    "threatLevel": "TPL:Amber",
     "createdDateTime": "2022-04-11T00:00:00.000Z"
   },
   {
@@ -37,6 +41,7 @@
     "type": "webscrape",
     "description": "Webscrape event on seed 2",
     "threatLevelCode": "3",
+    "threatLevel": "TPL:Red",
     "createdDateTime": "2022-02-01T00:00:00.000Z"
   },
   {
@@ -45,6 +50,7 @@
     "type": "email",
     "description": "Email event on seed 3",
     "threatLevelCode": "3",
+    "threatLevel": "TPL:Red",
     "createdDateTime": "2022-03-21T00:00:00.000Z"
   },
   {
@@ -53,6 +59,7 @@
     "type": "email",
     "description": "Email event on seed 4",
     "threatLevelCode": "2",
+    "threatLevel": "TPL:Amber",
     "createdDateTime": "2022-04-18T00:00:00.000Z"
   },
   {
@@ -61,6 +68,7 @@
     "type": "domain",
     "description": "Domain event on seed 4",
     "threatLevelCode": "1",
+    "threatLevel": "TPL:Green",
     "createdDateTime": "2022-04-19T00:00:00.000Z"
   },
   {
@@ -69,6 +77,7 @@
     "type": "email",
     "description": "Email event on seed 4",
     "threatLevelCode": "2",
+    "threatLevel": "TPL:Amber",
     "createdDateTime": "2022-04-20T00:00:00.000Z"
   },
   {
@@ -77,6 +86,7 @@
     "type": "domain",
     "description": "Domain event on seed 1",
     "threatLevelCode": "1",
+    "threatLevel": "TPL:Green",
     "createdDateTime": "2022-01-01T00:00:00.000Z"
   }
 ]

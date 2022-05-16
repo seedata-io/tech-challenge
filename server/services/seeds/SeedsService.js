@@ -1,4 +1,4 @@
-const seedsData = require('../../database/SeedsReposiory');
+const seedsData = require('../../database/SeedsRepository');
 
 const SeedsService = () => ({
   getAll() {

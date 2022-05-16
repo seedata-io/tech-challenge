@@ -97,7 +97,8 @@ describe('EventRouter', () => {
       expect(body).toEqual({ events: expectedEvents });
 
       const { events: returnedEvents } = body;
-      expect(returnedEvents).toEqual(expectedEvents[0]);
+
+      expect(returnedEvents).toEqual(expectedEvents);
 
     });
 
@@ -105,13 +106,14 @@ describe('EventRouter', () => {
       getAllEventsSpy.mockResolvedValue(events)
       getAllSeedsSpy.mockResolvedValue(seeds);
 
-      const expectedEventsOrder = [ events[2].id, events[1].id, events[0].id];
+      const expectedEventsOrder = [ events[0].id, events[1].id, events[2].id];
 
-      const { status, body } = await request(app).get("/api/events");
+      const { status, body } = await request(app).get("/api/events").query({sortField: 'createdDateTime', ascending: false});
 
       expect(status).toEqual(200);
 
       const { events: returnedEvents } = body;
+
       expect(returnedEvents.map(re => re.id)).toEqual(expectedEventsOrder);
 
     });
