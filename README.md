@@ -3,7 +3,7 @@
 ## Introduction
 We appreciate no-one likes doing technical challenges so we've tried to make this as simple as possible, we're only expecting you to take **1 hour** out of your time to complete as much as you can, with the mantra quality over quantity in mind!
 
-We'd like you to fork this repository, complete the chalenge in your own time and submit a pull request back to this repository. Once we've reviewed the code we'll set up a follow up interview (1 hour) to talk through the work you've done and a few more technical questions (no more coding though!).
+We'd like you to fork this repository, complete the chalenge in your own time. We'd then like you to create a pull request within your OWN repository and send us a link to access your repository (please don't create a PR on our repo because then it's visible to other candidates). Once we've reviewed the code we'll set up a follow up interview (1 hour) to talk through the work you've done and a few more technical questions (no more coding though!).
 
 ### **Challenge purpose:**
 The challenge is designed to give us an idea of how you approach problems and requirements and the solutions you put in place to fulfil/solve them. IT focusses on the following areas:
