@@ -1,11 +1,13 @@
 const { Router } = require('express');
-const eventsServive = require('../../services/events/EventsService');
+const eventsService = require('../../services/events/EventsService');
 
 const router = new Router();
 
-router.get("/", async (_req, res) => {
-  const events = await eventsServive.getAll();
-  res.json({ events });
+router.get('/:sortField?', async (req, res) => {
+  const { sortField } = req.query;
+  const events = await eventsService.getAll(sortField);
+
+  res.status(200).send({ events });
 });
 
 module.exports = router;
