@@ -4,7 +4,7 @@ function App() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch(`api/events?sortField=`) // SNEAKY URL
+    fetch(`api/events`)
       .then((res) => res.json())
       .then((data) => setEvents(data.events));
   }, []);
@@ -12,7 +12,7 @@ function App() {
   return (
     events && (
       <div className='App'>
-        <h5>Sort By</h5>
+        <h5 className='text-blue-500'>Sort By</h5>
         <div>
           <label htmlFor='seedSortField'>Seed Id</label>
           <input type='radio' value='seedId' />
