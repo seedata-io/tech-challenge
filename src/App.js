@@ -1,32 +1,36 @@
 import { useEffect, useState } from 'react';
+import EventsTable from './components/events-table/events-table';
+import Sort from './components/sort/sort';
 
 function App() {
   const [events, setEvents] = useState([]);
+  const [sortField, setSortField] = useState('');
+
+  const handleSort = (e) => {
+    if (e.target.value === sortField) {
+      setSortField('');
+    } else {
+      setSortField(e.target.value);
+    }
+  };
 
   useEffect(() => {
-    fetch(`api/events`)
+    fetch(`api/events?sortField=${sortField}`)
       .then((res) => res.json())
       .then((data) => setEvents(data.events));
-  }, []);
+  }, [sortField]);
 
+  if (events) {
+    console.log(events);
+  }
   return (
-    events && (
-      <div className='App'>
-        <h5 className='text-blue-500'>Sort By</h5>
-        <div>
-          <label htmlFor='seedSortField'>Seed Id</label>
-          <input type='radio' value='seedId' />
-        </div>
-        <br />
-        <div>
-          <label htmlFor='dateSSortField'>Created Date Time</label>
-          <input type='radio' value='createdDateTime' />
-        </div>
-        <br />
-        <h5>Resutls</h5>
-        {events.length} events found!
-      </div>
-    )
+    <div className='flex flex-col items-center h-screen w-full'>
+      <Sort handleSort={handleSort} sortField={sortField} />
+      <br />
+      <h5>Results: {events.length} events found!</h5>
+      <br />
+      {events && <EventsTable events={events} />}
+    </div>
   );
 }
 
