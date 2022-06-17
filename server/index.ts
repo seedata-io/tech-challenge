@@ -1,6 +1,6 @@
-const express = require("express");
-const { apiRouter } = require("./routes/api");
-const { eventsRouter } = require("./routes/events")
+import * as express from "express";
+import { apiRouter } from "./routes/api";
+import { eventsRouter } from "./routes/events";
 
 const PORT = process.env.PORT || 3001;
 

@@ -1,9 +1,9 @@
-const express = require('express'); // import express
-const eventsRouter = require("./EventsRouter"); //import file we are testing
-const request = require("supertest"); // supertest is a framework that allows to easily test web apis
-const eventsRepo = require('../../database/EventsRepository');
-const seedsRepo = require('../../database/SeedsRepository');
-const ThreatLevels = require('../../constants/ThreatLevels');
+import * as express from "express" // import express
+import eventsRouter from "./EventsRouter"; //import file we are testing
+import request from "supertest"; // supertest is a framework that allows to easily test web apis
+import eventsRepo from "../../database/EventsRepository";
+import seedsRepo from "../../database/SeedsRepository";
+import ThreatLevels from "../../constants/ThreatLevels";
 
 const app = express(); //an instance of an express app, a 'fake' express app
 app.use("/api/events", eventsRouter); //routes
@@ -16,7 +16,7 @@ describe('EventRouter', () => {
     let seeds;
     beforeEach(() => {
       getAllEventsSpy = jest.spyOn(eventsRepo, 'getAll');
-      getAllSeedsSpy =jest.spyOn(seedsRepo, 'getAll');
+      getAllSeedsSpy = jest.spyOn(seedsRepo, 'getAll');
 
       events = events = [
         {
@@ -61,7 +61,7 @@ describe('EventRouter', () => {
     afterEach(() => {
       getAllEventsSpy.mockReset();
       getAllSeedsSpy.mockReset();
-    }) 
+    })
     it('should return array sorted ASCENDING by seedId field from /api/events GET', async () => {
       getAllEventsSpy.mockResolvedValue(events)
       getAllSeedsSpy.mockResolvedValue(seeds);
@@ -105,7 +105,7 @@ describe('EventRouter', () => {
       getAllEventsSpy.mockResolvedValue(events)
       getAllSeedsSpy.mockResolvedValue(seeds);
 
-      const expectedEventsOrder = [ events[2].id, events[1].id, events[0].id];
+      const expectedEventsOrder = [events[2].id, events[1].id, events[0].id];
 
       const { status, body } = await request(app).get("/api/events");
 

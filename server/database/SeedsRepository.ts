@@ -1,4 +1,4 @@
-const seedsData = require('./seeds.json');
+import seedsData from './seeds.json';
 
 const SeedsRepository = () => ({
   async getAll() {
@@ -6,4 +6,4 @@ const SeedsRepository = () => ({
   },
 });
 
-module.exports = SeedsRepository();
+export default SeedsRepository();

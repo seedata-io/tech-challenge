@@ -5,4 +5,4 @@ const ThreatLevels = Object.freeze({
   3: 'TPL:Red',
 });
 
-module.exports = ThreatLevels;
+export default ThreatLevels;
