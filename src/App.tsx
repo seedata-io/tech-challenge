@@ -3,29 +3,29 @@ import { useEffect, useState } from 'react';
 function App() {
   const [events, setEvents] = useState([]);
 
-  useEffect(
-    () => {
-      fetch(`api/events?sortField=`)
-        .then((res) => res.json())
-        .then((data) => setEvents(data.events))
-    }, []
-  )
+  useEffect(() => {
+    fetch('api/events?sortField=')
+      .then((res) => res.json())
+      .then((data) => setEvents(data.events));
+  }, []);
 
   return events && (
     <div className="App">
       <h5>Sort By</h5>
       <div>
-        <label htmlFor='seedSortField'>Seed Id</label>
+        <label htmlFor="seedSortField">Seed Id</label>
         <input type="radio" value="seedId" />
       </div>
-      <br/>
+      <br />
       <div>
-        <label htmlFor='dateSSortField'>Created Date Time</label>
+        <label htmlFor="dateSSortField">Created Date Time</label>
         <input type="radio" value="createdDateTime" />
       </div>
-      <br/>
+      <br />
       <h5>Resutls</h5>
-      {events.length} events found!
+      {events.length}
+      {' '}
+      events found!
     </div>
   );
 }

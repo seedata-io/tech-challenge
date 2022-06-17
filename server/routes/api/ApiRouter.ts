@@ -2,7 +2,7 @@ import { Router } from 'express';
 
 const router = Router();
 
-router.get("/", (_res, res) => {
+router.get('/', (_res, res) => {
   res.json({ message: 'Server running!' });
 });
 

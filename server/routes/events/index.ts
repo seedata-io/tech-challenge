@@ -1,5 +1,5 @@
-import eventsRouter from "./EventsRouter"
+import eventsRouter from './EventsRouter';
 
 export {
-  eventsRouter
-}
+  eventsRouter,
+};
