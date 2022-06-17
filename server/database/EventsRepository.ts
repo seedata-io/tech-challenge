@@ -1,4 +1,4 @@
-const eventData = require('./events.json');
+import eventData from './events.json';
 
 const EventsRepository = () => ({
   async getAll(sortField) {
@@ -6,4 +6,4 @@ const EventsRepository = () => ({
   },
 });
 
-module.exports = EventsRepository();
+export default EventsRepository();
