@@ -4,14 +4,19 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
     "express": "^4.18.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-is": "^18.1.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.7.3",
+    "web-vitals": "^2.1.4",
+    "@mui/material": "^5.8.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "cors": "^2.8.5"
   },
   "scripts": {
     "start": "concurrently \"yarn start:server\" \"yarn start:client\"",
@@ -41,6 +46,14 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^17.0.42",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.25",
     "concurrently": "^7.1.0",
     "nodemon": "^2.0.16",
     "supertest": "^6.2.3"
